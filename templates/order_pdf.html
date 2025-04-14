@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order PDF</title>
+</head>
+<body>
+    <h1>Order Details</h1>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <td>{{ order[0] }}</td>
+        </tr>
+        <tr>
+            <th>Customer Name</th>
+            <td>{{ order[1] }}</td>
+        </tr>
+        <tr>
+            <th>Number of Crates</th>
+            <td>{{ order[2] }}</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>{{ order[3] }}</td>
+        </tr>
+        <tr>
+            <th>Due Time</th>
+            <td>{{ order[4] }}</td>
+        </tr>
+    </table>
+</body>
+</html>

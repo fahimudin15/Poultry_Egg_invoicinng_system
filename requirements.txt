@@ -1,0 +1,2 @@
+Flask==2.3.2
+xhtml2pdf==0.2.8

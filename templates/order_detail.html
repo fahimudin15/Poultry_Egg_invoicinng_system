@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Order Details{% endblock %}
+
+{% block content %}
+<h2 class="my-4">Order Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <td>{{ order[0] }}</td>
+    </tr>
+    <tr>
+        <th>Customer Name</th>
+        <td>{{ order[1] }}</td>
+    </tr>
+    <tr>
+        <th>Number of Crates</th>
+        <td>{{ order[2] }}</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>{{ order[3] }}</td>
+    </tr>
+    <tr>
+        <th>Due Time</th>
+        <td>{{ order[4] }}</td>
+    </tr>
+</table>
+
+<a href="/order_pdf/{{ order[0] }}" class="btn btn-primary">Download PDF</a>
+<a href="/orders" class="btn btn-secondary">Back to Orders</a>
+{% endblock %}

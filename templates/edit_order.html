@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Order{% endblock %}
+
+{% block content %}
+<h2 class="my-4">Edit Order</h2>
+<form method="post" class="row g-3">
+    <div class="col-md-6">
+        <label for="customer_name" class="form-label">Customer Name:</label>
+        <input type="text" name="customer_name" id="customer_name" class="form-control" value="{{ order[1] }}" required>
+    </div>
+    <div class="col-md-6">
+        <label for="num_crates" class="form-label">Number of Crates:</label>
+        <input type="number" name="num_crates" id="num_crates" class="form-control" value="{{ order[2] }}" required>
+    </div>
+    <div class="col-md-6">
+        <label for="price" class="form-label">Price:</label>
+        <input type="number" step="0.01" name="price" id="price" class="form-control" value="{{ order[3] }}" required>
+    </div>
+    <div class="col-md-6">
+        <label for="due_time" class="form-label">Due Time:</label>
+        <input type="datetime-local" name="due_time" id="due_time" class="form-control" value="{{ order[4] }}" required>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Update Order</button>
+    </div>
+</form>
+{% endblock %}

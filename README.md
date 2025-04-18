@@ -12,14 +12,12 @@ A simple egg management system built with Python and Next.js.
 # Requirements
 
 * Python 3.x
-* Node.js (for frontend)
-
+* Flask
 # Installation
 
 1. Clone the repository
 2. Install dependencies (if any)
 3. Run the backend script using `python egg_management_system.py`
-4. Run the frontend using `npm run dev` (after navigating to the frontend directory)
 
 # Usage
 
